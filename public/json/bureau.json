@@ -1,0 +1,20 @@
+[{
+		"Bureau": "Disponible",
+		"Etage" : 1
+	},
+	{
+		"Bureau": "Besoin d'un Bureau",
+		"Etage" : 1
+	},
+	{
+		"Bureau": "Disponible",
+		"Etage" : 3
+
+	},
+	{
+		"Bureau": "Pas besoin d'un Bureau",
+		"Etage" : 4
+
+	}
+
+]

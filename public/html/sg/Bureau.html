@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>SG/Bureau</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="/css/bureau.css">
+  </head>
+  <body>
+ <div class="container">
+  <h2>Bureau</h2>
+  <h3>Besoin d'un bureau pour le collaborateur</h3>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Les services généraux vérifient s'il reste des bureaux disponibles</div>
+      <div class="panel-body">
+          <form method="post" action="BureauSV">
+                 <p>
+                     Quel bureau est disponible?<br />
+                    <label for="BureauChoix"><span>Bureau</span>
+                      <select name="BureauChoix" class="custom-select mr-sm-2">
+                                    <optgroup label="1er Etage">
+                                        <option value="1e4">Bureau n°4</option>
+                                        <option value="1e5">Bureau n°5</option>
+                                        <option value="1e7">Bureau n°7</option>
+                                   </optgroup>
+                                   <optgroup label="2ème Etage">
+                                        <option value="2e1">Bureau n°1</option>
+                                        <option value="2e3">Bureau n°3</option>
+                                        <option value="2e4">Bureau n°4</option>
+                                   </optgroup>
+                                  <optgroup label="3ème Etage">
+                                        <option value="3e2">Bureau n°2</option>
+                                        <option value="3e3">Bureau n°3</option>
+                                        <option value="3e8">Bureau n°8</option>
+                        </optgroup>
+                                  
+                      </select></label>
+                 </p>
+            <input type="submit" value="Envoyer" />
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  </body>
+  
+  
+  
+  
+</html>

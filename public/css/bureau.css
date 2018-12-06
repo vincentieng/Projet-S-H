@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/assets/wallpapersh.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+h2{
+  color : white;
+}
+h3{
+  color : white;
+}
+p{
+  color :black;
+}

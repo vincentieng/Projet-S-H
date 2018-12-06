@@ -1,0 +1,54 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/fbb4172a-3e21-4126-b87a-28869407f34b%2Ffavicon_esiea.jpg?1543413724723">
+    <link rel="stylesheet" href="css/formulaire.css" type="text/css">
+    <title>Collaborateur/Accueil</title>
+  </head>
+<body>
+<div id="data">
+  
+<div class="form-style-2">
+<div class="form-style-2-heading">Veuillez remplir les champs ci-dessous</div>
+<form @submit="ajouter"  action="/html/rh/acceuil.html" method="post">
+
+<label for="field1"><span>Nom <span class="required">*</span></span><input type="text" v-model="newNom" class="input-field" name="field1" value="" /></label>
+
+<label for="field2"><span>Prénom <span class="required">*</span></span><input type="text" v-model="newPrenom" class="input-field" name="field2" value="" /></label>
+
+<label for="field3"><span>Email <span class="required">*</span></span><input type="text" v-model="newMail" class="input-field" name="field3" value="" /></label>
+  
+<label for="field10"><span> Mot de passe<span class="required">*</span></span><input type="password" v-model="newPassword" name="field10" class="input-field" value="" /></label>
+  
+<label for="field11"><span> Confirmation<span class="required">*</span></span><input type="password" v-model="newConfirmPassword" name="field11" class="input-field" value="" /></label>
+
+<label for="field4"><span>Civilité <span class="required">*</span></span><select v-model="newCivilite" name="field4" class="select-field">
+<option value="Francais">Francais</option>
+<option value="Anglais">Anglais</option>
+<option value="Autre">Autres</option>
+</select></label>
+
+<label for="field5"><span>Ville <span class="required">*</span></span><input type="text" v-model="newVille" class="input-field" name="field5" value="" /></label>
+
+<label for="field6"><span>Code postal <span class="required">*</span></span><input type="text" v-model="newCP" class="input-field" name="field6" value="" /></label>
+
+<label for="field7"><span>Téléphone <span class="required">*</span></span><input type="text" v-model="newTel" class="input-field" name="field7" value="" /></label>
+
+<label for="field8"><span>Profil du candidat<span class="required">*</span></span><textarea v-model="newProfil" placeholder="Décrivez en quelques mots votre profil, votre parcours professionnel..." name="field8" class="textarea-field"></textarea></label>
+
+<label for="field9"><span>Informations supplémentaires<span class="required">*</span></span><textarea v-model="newInfos" name="field9" class="textarea-field"></textarea></label>
+  
+<p>
+  {{errors}}
+  </p>
+  
+<label><span> </span><input type="submit" value="Submit"  /></label>
+
+</form>
+
+</div>
+</div>
+  
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <script src="/js/collaborateur.js"></script>
+</body>
+</html>
