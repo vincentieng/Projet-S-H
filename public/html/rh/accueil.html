@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>RH/Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="https://cdn.glitch.com/fbb4172a-3e21-4126-b87a-28869407f34b%2Ffavicon_esiea.jpg?1543413724723">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div id="data">
+      
+     <div class="container">
+      <h2>RH</h2>
+      <p>Différents collaborateurs gérés par le RH</p>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading"></div>
+              <div class="panel-body">
+                <table>
+                  <tr>
+                    <th> Noms </th>
+                    <th>Prénoms</th>
+                    <th>Bureau</th>
+                  </tr>
+                  <tr v-for="n in noms.length">
+                    <td>{{noms[n-1]}}</td> 
+                    <td>{{prenoms[n-1]}}</td>
+                    <td><a v-on:click="whoNeedABureau(n-1)" ><img src="/assets/78-512.png" height="42" width="42"></a></td>
+                     
+                  </tr>
+                  
+                  
+                </table>
+                
+            
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  
+    
+    
+    
+    
+    
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <script src="/js/collaborateur.js"></script>
+  </body>
+  
+  
+  
+  
+</html>

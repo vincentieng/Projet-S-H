@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>RH/Bureau</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="/css/bureau.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    
+    
+<div id="data">
+  
+   
+<div class="container">
+  <h2>Bureau</h2>
+  <h3>Besoin d'un bureau pour le collaborateur</h3>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Le RH envoie une demande aux services généraux</div>
+      <div class="panel-body">
+          <form @submit="whoIsClicked" method ="post" action ="/besoinbureau">
+                 <p>
+                     Le collaborateur a-t-il besoin d'un Bureau?<br />
+                   <div  class="custom-control custom-radio">
+                     
+           
+                     <input type="radio" class="custom-control-input"  name="besoinbureauRH" value="Besoin d'un Bureau" id="BesoinBureauRH" /> <label for="BesoinBureauRH" class="custom-control-label">Besoin d'un Bureau</label><br />
+                     <input type="radio" class="custom-control-input"  name="besoinbureauRH" value="Pas besoin d'un Bureau" id="PasBesoinBureauRH" /> <label for="PasBesoinBureauRH" class="custom-control-label" >Pas besoin d'un Bureau</label><br />
+                 </div>
+                 </p>
+            <input  type="submit" value="Envoyer" />
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div> 
+    
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <script src="/js/collaborateur.js"></script>
+  </body>
+  
+  
+  
+  
+</html>

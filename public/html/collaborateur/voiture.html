@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Collaborateur/Voiture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="/css/bureau.css">
+  </head>
+  <body>
+    <div id="data">
+      
+   
+     <div class="container">
+  <h2>Voiture</h2>
+  <h3>Choix de votre voiture</h3>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Voici la voiture choisie par votre RH </div>
+      <div class="panel-body">
+          <form method="post" @submit="ClickedVoitureCollaborateur" >
+                <a href="https://www.fcafleet-business.fr/grandes-entreprises/fiche-produit/giulietta">Voiture n°1</a>
+            
+                 <p>
+                     La voiture vous convient-elle?<br />
+                   <div>
+                     
+                      <input type="radio" name="VoitureOK" value="Oui" id="VoitureOK" > <label for="VoitureOK">Oui</label>
+                      <input type="radio" name="VoitureOK" value="Non" id="VoiturePasOK" > <label for="VoiturePasOK">Non</label>
+                    </div>
+                 </p>
+            <input type="submit" value="Envoyer" />
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+    
+    
+    
+    
+        
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <script src="/js/collaborateur.js"></script>
+    
+  </body>
+  
+  
+  
+  
+</html>

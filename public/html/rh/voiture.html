@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>RH/Voiture</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="/css/bureau.css">
+  </head>
+  <body>
+    <div id="data">
+      
+   
+ <div class="container">
+  <h2>Voiture</h2>
+  <h3>Besoin d'une voiture pour le collaborateur</h3>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">Le RH regarde quel type de voiture le collaborateur va utiliser</div>
+      <div class="panel-body">
+          <form   @submit="ClickedVoitureRH"   method="post" >
+                 <p>
+                     Quel voiture prendre?<br />
+                    <label for="VoitureChoix"><span>Voiture</span>
+                      <select  name="VoitureChoix" id="VoitureRH"  class="select-field">
+                                    
+                                        <option value="1">Voiture n°1</option>
+                                        <option value="2">Voiture n°2</option>
+                                        <option value="3">Voiture n°3</option>
+                                        <option value="4">Voiture n°4</option>
+                               
+                                  
+                      </select></label>
+                 </p>
+            <input type="submit" value="Envoyer" />
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+ <script src="/js/collaborateur.js"></script>
+    
+  </body>
+  
+  
+  
+  
+</html>

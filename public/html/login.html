@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Login </title>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/fbb4172a-3e21-4126-b87a-28869407f34b%2Ffavicon_esiea.jpg?1543413724723">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+<body>
+    <div id="login">
+      
+    <div class="loginbox">
+    <img src="/assets/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form @submit="checkInfos">
+            <p>Username</p>
+            <input type="text" id="username" v-model="User" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" id="password" v-model="Password" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            <a href="/html/register.html">Don't have an account?</a>
+            <p>
+              {{errors}}
+          </p>
+         
+          <p>
+            {{connectedUser}}
+          </p>
+        </form>
+      
+     
+    </div>
+     
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="/js/login.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+</body>
+
+</html>
